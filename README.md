@@ -6,8 +6,8 @@ The motivation behind this project was to learn more about tests and how they in
 
 ## Usage
 
-To use this application, open your integrated terminal, enter "npm i inquirer" to install inquirer. Then, run node cli, which will then prompt you with questions to create your logo. The questions & results are shown below.
+To use this application, open your integrated terminal, enter "npm i inquirer" to install inquirer. Then, run node index, which will then prompt you with questions to create your logo. The questions & results are shown below.
 
-![logo questions](assets/images/screenshot.png)
-![sample logo](assets/images/screenshot.png)
+![logo questions](./logo-questions.png)
+![sample logo](./sample-logo.png)
 
