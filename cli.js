@@ -27,7 +27,7 @@ class CLI {
         {
             type: 'input',
             name: 'background',
-            message: 'What color would you like the backgroung?'
+            message: 'What color would you like the background?'
         }
       ])
       .then(({text, textColor, shape, background}) => {
