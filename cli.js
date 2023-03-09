@@ -43,7 +43,7 @@ class CLI {
             fs.writeFileSync(
                 `logo.svg`,
                 `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-                <${shape} x="90" y="40" width="120" height="120" fill="${background}" />
+                <rect x="90" y="40" width="120" height="120" fill="${background}" />
                 <text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text>
                 </svg>`
             );
@@ -51,7 +51,7 @@ class CLI {
             fs.writeFileSync(
                 `logo.svg`,
                 `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-                <${shape} points="150, 18 244, 182 56, 182" fill="${background}" />
+                <polygon points="150, 18 244, 182 56, 182" fill="${background}" />
                 <text x="150" y="150" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text>
                 </svg>`
             );
