@@ -31,7 +31,7 @@ class CLI {
         }
       ])
       .then(({text, textColor, shape, background}) => {
-        if(shape === "circle") {
+        if(shape === "Circle") {
             fs.writeFileSync(
                 `logo.svg`,
                 `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@ class CLI {
                 <text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text>
                 </svg>`
             );
-        } else if (shape === 'square') {
+        } else if (shape === 'Square') {
             fs.writeFileSync(
                 `logo.svg`,
                 `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
