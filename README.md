@@ -8,7 +8,7 @@ The motivation behind this project was to learn more about tests and how they in
 
 To use this application, open your integrated terminal, enter "npm i inquirer" to install inquirer. Then, run node index, which will then prompt you with questions to create your logo. The questions & results are shown below.
 
-Click [this link](https://watch.screencastify.com/v/c5i2ki89NuvsFs7C76B0) to watch a walkthrough video of the application.
+Click [this link](https://watch.screencastify.com/v/oeoxzG4evdz48jPYBh7W) to watch a walkthrough video of the application.
 
 ![logo questions](./logo-questions.png)
 ![sample logo](./sample-logo.png)
