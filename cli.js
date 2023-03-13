@@ -19,10 +19,10 @@ class CLI {
             message: 'What color would you like the text?' 
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'shape',
             message: 'Which shape would you like for your logo?',
-            choices: [Circle, Square, Triangle]
+            choices: ['Circle', 'Square', 'Triangle']
         },
         {
             type: 'input',
@@ -31,11 +31,12 @@ class CLI {
         }
       ])
       .then(({text, textColor, shape, background}) => {
+        console.log(shape)
         if(shape === "Circle") {
             fs.writeFileSync(
                 `logo.svg`,
                 `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-                <${shape} cx="150" cy="100" r="80" fill="${background}" />
+                <circle cx="150" cy="100" r="80" fill="${background}" />
                 <text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text>
                 </svg>`
             );
@@ -59,7 +60,7 @@ class CLI {
       })
       .then(() =>{
         // confirm that file has been written
-        console.log('logo.svg has been generated, hooray!');
+        console.log('logo.svg has been generated, hooray! Celebrations!');
       })
       .catch((error) => {
         console.log(error);
